@@ -99,6 +99,8 @@ namespace Blog2.BLL.Controllers
         [HttpGet]
         public async Task<IActionResult> EditAccount(Guid id)
         {
+            //int zero = 0;
+            //var res = 5 / zero;
             var model = await _accountService.EditAccount(id);
             return View(model);
         }
